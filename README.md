@@ -4,3 +4,7 @@ Demo / POC for ASync Messaging Solution using multiple Service Bus namespaces to
 Based on :
 
 https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-overview
+
+see also :
+
+https://github.com/Azure-Samples/azure-messaging-replication-dotnet
