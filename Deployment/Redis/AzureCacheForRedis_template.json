@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "Redis_name": {
+            "defaultValue": "shovelrouteredis",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Cache/Redis",
+            "apiVersion": "2019-07-01",
+            "name": "[parameters('Redis_name')]",
+            "location": "North Europe",
+            "properties": {
+                "sku": {
+                    "name": "Standard",
+                    "family": "C",
+                    "capacity": 0
+                },
+                "enableNonSslPort": false,
+                "minimumTlsVersion": "1.0",
+                "redisConfiguration": {
+                    "maxclients": "256",
+                    "maxmemory-reserved": "0",
+                    "maxfragmentationmemory-reserved": "0",
+                    "maxmemory-policy": "volatile-lru",
+                    "maxmemory-delta": "0"
+                }
+            }
+        }
+    ]
+}

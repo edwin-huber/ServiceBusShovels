@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "message_sender": {
+      "commandName": "Project",
+      "commandLineArgs": "tenant_out <your connection string here>"
+    }
+  }
+}

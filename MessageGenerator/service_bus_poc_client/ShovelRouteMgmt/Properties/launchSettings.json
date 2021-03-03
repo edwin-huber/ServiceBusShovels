@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ShovelRouteMgmt": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Key": "Value",
+        "RedisConnectionString": "<your redis connection string here>"
+      }
+    }
+  }
+}
